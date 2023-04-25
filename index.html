@@ -3,15 +3,24 @@
 <body>
 <style>
 body, html {width: 100%; height: 100%; margin: 0; padding: 0}
-.row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: blue; overflow: hidden;}
-.first-row {background-color: lime; }
+.row-container {display: flex; width: 100%; height: 100%; flex-direction: column; background-color: grey; overflow: hidden;}
+.first-row {background-color: white; height: 100px;}
 .second-row { flex-grow: 1; border: none; margin: 0; padding: 0; }
 </style>
 
 <div class="row-container">
   <div class="first-row">
     <h1>SAWC Demo Photosphere Viewer</h1>
-    <p><a href="#" onclick="document.getElementById('webpage').src = 'photosphere.html?p=ghbrmaster.jpg?p=ghmain.jpg';">Guest House Main Room</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=ghbrmaster.jpg';">Guest House Master Bedroom</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=ghhallway.jpg';">Guest House Hallway</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=ghmain.jpg';">Guest House Main Room</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=dininghallb.jpg';">Dining Hall B</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=dininghalloutside.jpg';">Dining Hall Outside</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=insidetent7.jpg';">Tent 7 Inside</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=insidetent8.jpg';">Tent 8 Inside</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=outsidetent8.jpg';">Tent 8 Outside</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=studentroomb1.jpg';">Student Room A</a></p>
+    <p><a href="#" onclick="document.getElementById('psframe').src = 'photosphere.html?p=studentroomb2.jpg';">Student Room B</a></p>
   </div>
   <iframe id="psframe" src="photosphere.html?p=ghbrmaster.jpg" class="second-row"></iframe>
 </div>
